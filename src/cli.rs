@@ -1,14 +1,14 @@
 use structopt::StructOpt;
 
-/// Solver
+/// Collatz conjecture tester
 #[derive(StructOpt, Debug)]
 #[structopt()]
 pub struct Args {
-    /// Low number
+    /// Lower range
     #[structopt(short, long)]
     pub low: u128,
 
-    /// High number
+    /// Upper range
     #[structopt(short, long)]
     pub high: u128,
 }
